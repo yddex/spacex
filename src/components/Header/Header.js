@@ -1,4 +1,5 @@
 import { Logo } from "../Logo";
+import {Nav} from "../Nav";
 import "./style.scss";
 
 export function Header() {
@@ -12,16 +13,7 @@ export function Header() {
   return (
     <header className="header center">
       <Logo />
-      <nav className="nav">
-        {/* Дивы, вместо тегов линка, чтобы не делать заглушки, которые обновят SPA */}
-        {links.map((link, i) => {
-          return (
-            <div className="nav__link" key={i}>
-              {link}
-            </div>
-          );
-        })}
-      </nav>
+      <Nav links={links}/>
     </header>
   );
 }
