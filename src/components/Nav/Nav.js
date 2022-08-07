@@ -1,19 +1,14 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import burger from "../../img/burger.png";
 import close from "../../img/close.png";
 import "./style.scss";
 export function Nav({ links }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const toggleOpen = (state) => {
     setOpen(state);
   };
 
-  useEffect(() => {
-    if (window.innerWidth < 750) {
-      toggleOpen(false);
-    }
-  }, []);
   return (
     <>
       <img

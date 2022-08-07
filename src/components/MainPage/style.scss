@@ -1,9 +1,15 @@
 .main{
-    background-image: url('../../img/backgroung.png');
+    background-image: url('../../img/background_sun.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    min-height: 720px;
     width: 100%;
     box-sizing: border-box;
+    &__content{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
 }

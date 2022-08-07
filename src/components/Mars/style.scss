@@ -1,0 +1,13 @@
+.mars{
+    width: 500px;
+    height: 500px;
+    align-self: center;
+  }
+  .fallback_mars{
+    width: 500px;
+    height: 500px;
+    background-image: url('../../img/mars.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }

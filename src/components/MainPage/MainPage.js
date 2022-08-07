@@ -1,10 +1,14 @@
+import { Mars } from '../Mars';
 import { Header } from '../Header';
 import './style.scss';
 
 export function MainPage(){
     return(
-        <div className='main'>
+        <main className='main'>
             <Header/>
-        </div>
+            <section className='main__content'>
+            <Mars/>
+            </section>
+        </main>
     )
 }
